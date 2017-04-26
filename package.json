@@ -1,0 +1,22 @@
+{
+  "name": "viridine",
+  "version": "1.0.0",
+  "description": "A simple lightweight HTTP server",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js -p 80 -t"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jextious/viridine.git"
+  },
+  "author": "Jextious <jextious@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jextious/viridine/issues"
+  },
+  "homepage": "https://github.com/jextious/viridine#readme"
+}
