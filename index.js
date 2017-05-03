@@ -1,7 +1,7 @@
 let Viridine = require("./lib/viridine"),
 	server = new Viridine(),
 	exitHandler = signal => {
-		server.dumpLogs(true);
+		server.gc(true);
 
 		process.kill(process.pid, signal);
 	};
