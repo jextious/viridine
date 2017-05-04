@@ -1,4 +1,4 @@
-let Viridine = require("./lib/viridine"),
+const Viridine = require("./lib/viridine"),
 	server = new Viridine(),
 	exitHandler = signal => {
 		server.gc(true);
