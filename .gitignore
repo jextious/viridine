@@ -5,14 +5,12 @@ Desktop.ini
 $RECYCLE.BIN/
 
 # OSX
-
 .DS_Store
 .AppleDouble
 .LSOverride
 ._*
 
 # Other
-
 logs
 node_modules
 public

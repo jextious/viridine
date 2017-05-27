@@ -1,12 +1,6 @@
 # Viridine
 A simple lightweight HTTP server written in JavaScript.
 
-## How to Install
-Install [Node.js](https://nodejs.org/) and run:
-```
-npm install viridine
-```
-
 ## Running a Server
 To run the server at its default settings, simply run:
 ```
