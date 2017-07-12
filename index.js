@@ -1,3 +1,5 @@
+"use strict";
+
 const Viridine = require("./lib/viridine"),
 	server = new Viridine(),
 	exitHandler = signal => {
