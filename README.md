@@ -135,22 +135,29 @@ To be able to use dynamic content on a server, scripts need the .jss extension. 
 In addition to the JSS functions, a few global variables are also available.
 
 **SERVER**
+
 This object consists of data related to the current server request.
 
 **SESSION**
+
 This object holds all the data from a visitor's session.
 
 **GET**
+
 An object of all the GET variables passed to a script.
 
 **POST**
+
 An object of all the POST variables passed to a script.
 
 **FILES**
+
 This object contains information about the files that were just uploaded by a visitor.
 
 **DATA**
+
 This object can be used to store site data that will be needed a lot.
 
 **COOKIE**
+
 All of a visitor's cookies are stored in this object.
