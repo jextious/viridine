@@ -24,6 +24,9 @@ To be able to use dynamic content on a server, scripts need the .jss extension. 
 **urlEncode**(str)
 - *str* - The string to be encoded.
 
+**urlDecode**(str)
+- *str* - The string to be decoded.
+
 **htmlEntities**(str)
 - *str* - The input string.
 
