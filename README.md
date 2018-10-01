@@ -21,6 +21,41 @@ When the server is first run, it will create the default configuration file if i
 ## JSS Functions
 To be able to use dynamic content on a server, scripts need the .jss extension. A JSS script consists of pure JavaScript, with the addition of a bunch of useful functions provided by Viridine.
 
+**setHeader**(name, value)
+- *name* - The name of the header.
+- *value* - The value of the header.
+
+**setCookie**(name, value[, expire[, path[, domain[, secure[, http]]]]])
+- *name* - Name of the cookie.
+- *value* - Value of the cookie.
+- *expire* - The expiration date; 0 for session, -1 to destroy the cookie.
+- *path* - The path of the site the cookie will be available on.
+- *domain* - The domain the cookie is available to.
+- *secure* - Whether the cookie should be used over HTTPS.
+- *http* - Whether the cookie should be HTTP-only.
+
+**setTimeLimit**(time)
+- *time* - The maximum execution time, in milliseconds.
+
+**setStatus**(code)
+- *code* - The code of the status.
+
+**setCache**(bool[, time])
+- *bool* - Whether to send the "last modified" header.
+- *time* - The max age of the "cache control" header.
+
+**setIncludePath**(path)
+- *path* - The new path.
+
+**include**(file)
+- *file* - The file to be included.
+
+**includeOnce**(file)
+- *file* - The file to be included if it hasn't already.
+
+**echo**(str)
+- *str* - The string to output. Can also be an object.
+
 **urlEncode**(str)
 - *str* - The string to be encoded.
 
@@ -36,6 +71,9 @@ To be able to use dynamic content on a server, scripts need the .jss extension. 
 **ucFirst**(str)
 - *str* - The input string.
 
+**escapeUnicode**(str)
+- *str* - The string to be escaped.
+
 **isSet**(var)
 - *var* - The variable to be checked.
 
@@ -45,32 +83,6 @@ To be able to use dynamic content on a server, scripts need the .jss extension. 
 **numberFormat**(number[, sep])
 - *number* - The number to be formatted.
 - *sep* - The thousands separator; "," by default.
-
-**escapeUnicode**(str)
-- *str* - The string to be escaped.
-
-**echo**(str)
-- *str* - The string to output. Can also be an object.
-
-**setHeader**(name, value)
-- *name* - The name of the header.
-- *value* - The value of the header.
-
-**setCache**(bool[, time])
-- *bool* - Whether to send the "last modified" header.
-- *time* - The max age of the "cache control" header.
-
-**setCookie**(name, value[, expire[, path[, domain[, secure[, http]]]]])
-- *name* - Name of the cookie.
-- *value* - Value of the cookie.
-- *expire* - The expiration date; 0 for session, -1 to destroy the cookie.
-- *path* - The path of the site the cookie will be available on.
-- *domain* - The domain the cookie is available to.
-- *secure* - Whether the cookie should be used over HTTPS.
-- *http* - Whether the cookie should be HTTP-only.
-
-**setStatus**(code)
-- *code* - The code of the status.
 
 **scanDir**(dir)
 - *dir* - The directory to be scanned.
@@ -82,8 +94,8 @@ To be able to use dynamic content on a server, scripts need the .jss extension. 
 - *dir* - The directory to be removed.
 
 **fileRename**(old, new)
-- *old* - The old name.
-- *new* - The new name.
+- *old* - The old filename.
+- *new* - The new filename.
 
 **fileCopy**(src, dest)
 - *src* - The source file to be copied.
@@ -104,15 +116,6 @@ To be able to use dynamic content on a server, scripts need the .jss extension. 
 
 **fileStats**(file)
 - *file* - Path to the file.
-
-**setIncludePath**(path)
-- *path* - The new path.
-
-**include**(file)
-- *file* - The file to be included.
-
-**includeOnce**(file)
-- *file* - The file to be included if it hasn't already.
 
 **sessionStart**()
 
